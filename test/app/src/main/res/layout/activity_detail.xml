@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.view.DetailActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="450dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_black"
+            android:padding="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordes_textview_detail"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="2013"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@id/lblLanguaje"
+            app:layout_constraintStart_toStartOf="@+id/lblTitle"
+            app:layout_constraintTop_toBottomOf="@+id/lblTitle" />
+
+        <TextView
+            android:id="@+id/lblLanguaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bordes_textview_detail"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="en"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/lblDate"
+            app:layout_constraintEnd_toStartOf="@id/lblVote"
+            app:layout_constraintStart_toEndOf="@id/lblDate"
+            app:layout_constraintTop_toTopOf="@+id/lblDate" />
+
+        <TextView
+            android:id="@+id/lblVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bordes_textview_background"
+            android:drawableLeft="@drawable/ic_star_black_18dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="5.8"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/lblLanguaje"
+            app:layout_constraintEnd_toEndOf="@+id/lblTitle"
+            app:layout_constraintStart_toEndOf="@id/lblLanguaje"
+            app:layout_constraintTop_toTopOf="@+id/lblLanguaje" />
+
+        <TextView
+            android:id="@+id/lblOverView"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/roboto_medium"
+            android:inputType="textMultiLine"
+            android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxcxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnVerTrailer" />
+
+        <TextView
+            android:id="@+id/lblGenre1"
+            style="@style/TextStyleGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Hearfelt"
+            app:layout_constraintEnd_toStartOf="@id/lblGenre2"
+            app:layout_constraintStart_toStartOf="@+id/lblDate"
+            app:layout_constraintTop_toBottomOf="@+id/lblDate" />
+
+        <TextView
+            android:id="@+id/lblGenre2"
+            style="@style/TextStyleGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Romance"
+            app:layout_constraintBottom_toBottomOf="@+id/lblGenre1"
+            app:layout_constraintEnd_toStartOf="@id/lblGenre3"
+            app:layout_constraintStart_toEndOf="@id/lblGenre1"
+            app:layout_constraintTop_toTopOf="@+id/lblGenre1" />
+
+        <TextView
+            android:id="@+id/lblGenre3"
+            style="@style/TextStyleGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Sci-fi"
+            app:layout_constraintBottom_toBottomOf="@+id/lblGenre2"
+            app:layout_constraintEnd_toStartOf="@id/lblGenre4"
+            app:layout_constraintStart_toEndOf="@id/lblGenre2"
+            app:layout_constraintTop_toTopOf="@+id/lblGenre2" />
+
+        <TextView
+            android:id="@+id/lblGenre4"
+            style="@style/TextStyleGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Drama"
+            app:layout_constraintBottom_toBottomOf="@+id/lblGenre3"
+            app:layout_constraintEnd_toEndOf="@+id/lblVote"
+            app:layout_constraintStart_toEndOf="@id/lblGenre3"
+            app:layout_constraintTop_toTopOf="@+id/lblGenre3" />
+
+        <Button
+            android:id="@+id/btnVerTrailer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="Ver Trailer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblGenre2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
