@@ -1,7 +1,7 @@
 ### testrappi
 ## Test para Rappi aplicando clean arquitecture y el patron de diseño **MVVM** **Retrofit** **Inyección de dependencias** **Test unitarios**
 ## Para la información del backend se uso la api **Api Movie Db** 
-[Url](https://api.themoviedb.org/)
+[api.themoviedb.org](https://api.themoviedb.org/)
 
 
 
